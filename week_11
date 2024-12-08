@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+x = np.linspace(-4, 2, 200)
+
+plt.plot(x, np.log(x))
+plt.plot(x, x)
+plt.plot(x, np.exp(x))
+
+plt.title('Graph of y=ln(x) and y=x and y=e^x')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(loc='upper left')
+plt.grid
+plt.ylim(-4, 8)
+plt.xlim(-4, 8)
+plt.show()
